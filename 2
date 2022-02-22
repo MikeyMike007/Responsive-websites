@@ -34,7 +34,7 @@
 | `<style>`                        | css                              |
 | `footer`                         |                                  |
 
-## CSS tags
+## css tags
 
 | tag                          | description                                    |
 | ---------------------------- | ---------------------------------------------- |
@@ -270,7 +270,8 @@ will inherit the style.
 
 ### Combining selectors
 
-You can use the same properties for many selectors at the same time e.g.,
+You can use the same properties for many selecters at the same time e.g.,
+
 
 ```css
 h1,
@@ -283,7 +284,7 @@ p {
 }
 ```
 
-Modify `<p>` tags only in the `<footer>` - use then:
+modify `<p>` tags only in the `<footer>` - use then:
 
 ```css
 footer p {
@@ -291,7 +292,7 @@ footer p {
 }
 ```
 
-Same for `<p>` tags in headers - use then
+same for `<p>` tags in headers - use then
 
 ```css
 header p {
@@ -302,13 +303,13 @@ header p {
 following code formats `<p>` tags which is inside a `<header>` tag which itself
 is in a `<article>` tag.
 
-### Classes and id-selectors
+### classes and id-selectors
 
-Comment in css: `/* comment */`
+comment in css: `/* comment */`
 
-Comment in vs-code: `<c-/>`:
+comment in vs-code: `<c-/>`:
 
-Working with id's in CSS:
+working with id's in css:
 
 - specify id in a html tag like `<p id="copyright>` or `<p id="author">` and
   then use `#author {}` and `#copyright{}` in the css file for styling. make sure
@@ -317,31 +318,31 @@ Working with id's in CSS:
   same way i.e. `<p class="related-author">` and then `.related-author{}` in the
   css file.
 
-Disable bullet points: `ul {list-style = none;}`
+disable bullet points: `ul {list-style = none;}`
 
-You should use classes and not id's.
+you should use classes and not id's.
 
-Color can be specified as `rgb(x,y,z)` or `#hexvalue`. `rgba()` also specifies
-transparency.
+color can be specified as `rgb(x,y,z)` or `#hexvalue`. `rgba()` also specifies
+transparancy.
 
-Selectors are additive.
+selectors are additive.
 
-You can basically give an area a name i.e. `<header>`and then only choose to
+you can basically give an area a name i.e. `<header>`and then only choose to
 style it with `header {background-color: black;}` if you have similar areas of
 `<header>`, you can basically add a class to it.
 
-If you want to add a background color to whole document,
-just add `body {background-color: blue;}`
+if you want to add a background color to whole document, just add `body {background-color: blue;}`
 
-Two methods set the first bullet list to another style than the rest of them:
+two methods set the first bullet list to another style than the rest of them:
 
 1. set class "first-li" to all first `<li>` tags in a list i.e. `<li class="first-li">`
 2. without modifying the html code, you can write following code in the `css`
    file `li:first-child {font-weight: bold;}` this is called pseudo-classes.
 
-### Pseudo-classes
+### pseudo-classes
 
-Examples of pseudo classes
+examples of pseudo classe
+s
 
 ```css
 /* first list element */
@@ -365,8 +366,10 @@ li:nth-child(odd) {
 }
 ```
 
-Another example that will not work which is a common missconseption on how
-pseudo classes works. For example, if we have this html code:
+another example that will not work which is a common missconseption on how
+pseudo classes works.
+
+for example, if we have this html code:
 
 ```html
 <article>
@@ -398,7 +401,7 @@ is the first child of `<article>`. so what would work in this case is only
 in the following html code we see that `<p>` is the last child of `<article>`,
 here we could use: `article p:last-child { color: red;}` to style that.
 
-### Styling hyperlinks
+### styling hyperlinks
 
 ```css
 /* styling hyperlinks */
@@ -423,36 +426,37 @@ a:active {
 }
 ```
 
-### Chrome dev tools
+### chrome dev tools
 
-You can do some testing under following link without changing any code:
+you can do some testing under following link without changing any code:
 
 `right click->inspect->elements`
 
-### Conflicts between selectors
+### conflicts between selectors
 
-1. Should not be used: declaration marked `!important`.
-2. Should not be used: inline style (style attribute in html)
-3. Highest priority: id selector (last selector gets applied)
-4. Class (.) or pseudo class (:) selector
-5. Element selector (p, div, li, etc)
-6. Universal selector
+1. should not be used: declaration marked `!important`.
+2. should not be used: inline style (style attribute in html)
+3. highest priority: id selector (last selector gets applied)
+4. class (.) or pseudo class (:) selector
+5. element selector (p, div, li, etc)
+6. universal selector
 
-### Inheritance and the universal selector
+### inheritance and the universal selector
 
-Inheritance comes from parent tags. E.g. style `a (link)` and `p` tags within
-`a` `<nav>` tag:
+inheritance comes from parent tags.
+
+style `a (link)` and `p` tags within `a` nav tag:
 
 `nav a:link, nav p { font-size: 18px; }`
 
-Or you could just do: `nav { font-size: 18px;}` which basically is the same if
+or you could just do: `nav { font-size: 18px;}` which basically is the same if
 there is only a `<a>` and `<p>` tag inside the `<nav>`.
 
-Universal selector: `* {}`, you could also use `body {}`.
+universal selector: `* {}`, you could also use `body {}`.
 
-### Box model
+### box model
 
-Following codes are equal:
+following codes are equal:
 
 ```css
 .main-header {
@@ -468,54 +472,49 @@ Following codes are equal:
 }
 ```
 
-### Collapsing margins
+### collapsing margins
 
-Something about the how CSS adds up margins between two boxes.
+something about the how css adds upp margins between two boxes.
 
-### Images
+### images
 
-Set the width or height to what is specified in the html tag, use:
+set the width or height to what is specified in the html tag, use:
 
 `.post-img { width: 100%; height: auto;}`
 
-The `width: 100%` is making the width of the pciture dynamic.
+the `width: 100%` is making the width of the pciture dynamic.
 
-### Centering our page
+### centering our page
 
-Add container of what you want to center line `<div class="container">`. Add
-following in the css
-`.container {width: 700px}; margin-left: auto; margin-right: auto;}`
-this centers the page and is dynamic.
+add container of what you want to center line `<div class="container">`.
+add following in the css `.container {width: 700px}; margin-left: auto; margin-right: auto;}` this centers the page and is dynamic.
 
-### Different types of boxes
+### different types of boxes
 
 - inline boxes: dont create any vertical space outside the element i.e. the
-  margin: i.e. `nav a: link {margin: 20px; }` wont work since it does not create
-  any vertical space. the padding will indeed work since it is inside the box
-  i.e. `nav a:link {padding: 20px;}`. to change it to an block level element
-  with `nav a:link {margin:20px; padding:20px; display: block;}`. this will get
-  the `margin` to work..
+  margin: i.e. `nav a: link {margin: 20px; }` wont work since it does not create any vertical space. the padding will
+  indeed work since it is inside the box i.e. `nav a:link {padding: 20px;}`. to
+  change it to an block level element with `nav a:link {margin:20px; padding:20px; display: block;}`. this will get the `margin` to work..
 
 - block level elements:
 
-- inline block element: combination of inline element and box elements
-  e.g. `nav a: link {margin-top:30px; display:inline-block;}`
+- inline block element: combination of inline element and box element e.g. `nav a: link {margin-top:30px; display:inline-block;}`
 
 - images are inline-block elements.
 
-### Absolute positioning
+### absolute positioning
 
-If you want to add a **like button** in the button of the page (right). you can
+if you want to add a **like button** in the botton of the page (right). you can
 first add a `<button>` tag in the html code then in the css code you can
 specify: `button { position: absolute; bottom: 50px; right: 50px;}` and then in
 the body you can add `body {position:relative;}`. you can also put the
 `relative` position in a container.
 
-Should only be used for single elements.
+should only be used for single elements.
 
-### Pseudo elements
+### pseudo elements
 
-Style first letter in `<h1>` directly from css:
+style first letter in `<h1>` directly from css:
 
 ```css
 h1::first-letter {
@@ -524,7 +523,7 @@ h1::first-letter {
 }
 ```
 
-Style first line in all `<p>` tags:
+style first line in all `<p>` tags:
 
 ```css
 p::first-line {
@@ -532,7 +531,7 @@ p::first-line {
 }
 ```
 
-Style the first line in a paragraph directly after a `<h3>` tag:
+style the first line in a paragraph directly after a `<h3>` tag:
 
 ```css
 h3 + p::first-line {
@@ -540,7 +539,7 @@ h3 + p::first-line {
 }
 ```
 
-Add a cool "top box" next to a `<h2>` header:
+add a cool "top box" next to a `<h2>` header:
 
 ```css
 h2 {
@@ -559,10 +558,10 @@ top:-15px;
 right: -25px;
 ```
 
-### Centering
+### centering
 
-One usual mistake that people do is that they try to center e.g. text inside
-inline elements. For example, you have:
+one ususal misstake that people do is that they try to center e.g. text inside
+inline elements. for example, you have:
 
 ```html
 <nav>
@@ -581,13 +580,13 @@ nav a:link {
 }
 ```
 
-This will not work since inline elements dont have any space over for what it
+this will not work since inline elements dont have any space over for what it
 contains.
 
-The solution is that you should place the `text-align:center;` property to its
+the solution is that you should place the `text-align:center;` property to its
 parent.
 
-The solution is that you should place the `text-align:center;` property to its
+the solution is that you should place the `text-align:center;` property to its
 parent i.e.
 
 ```css
@@ -596,37 +595,30 @@ nav {
 }
 ```
 
-## Layouts
+## layouts
 
-Three types of layouts:
+three types of layouts:
 
 1. floats
 2. flexbox
 3. grid
 
-### Float
+### float
 
-If a container, header, or whatsoever contains child elements which all are
-floated, then the height of the container will collapse. you can clear floats
-by adding a `<div class="clear"></div>` element into the container and in the
-css code state: `.clear {clear: both};`.
+if a container, header, or whatsoever contains child elements which all are floated, then the height of the container will collapse.
+you can clear floats by adding a `<div class="clear"></div>` element into the container and in the css code state: `.clear {clear: both};`.
 
-you could also add a class called `clearfix` to the parent element and then add
-a new last child element
-with `.clearfix::after { clear: both; content:''; display: block}`
+you could also add a class called `clearfix` to the parent element and then add a new last child element with `.clearfix::after { clear: both; content:''; display: block}`
 
-If the contents don't fit in a flow dynamic based on the components weights, you
-can use the `box-sizing: border-box;`. if you want this box model be applied
-to all elements on the page, just put it in the universal selector `* {}`. you
-cannot put it in the body section since `box-sizing:` doesnt get inherited.
+if the contents dont fit in a flow dynamic based on the components weights, you can use the `box-sizing: border-box;`. if you want this box model be applied to all elements on the page, just put it in the universal selector `* {}`. you cannot put it in the body section since `box-sizing:` doesnt get inherited.
 
-## Flexbox
+## flexbox
 
-### Introduction
+### introduction
 
-#### Base code
+#### base code
 
-Following code gives:
+following code gives:
 
 ```html
 <!DOCTYPE html>
@@ -687,18 +679,17 @@ Following code gives:
 </html>
 ```
 
-Following output:
+following output:
 
 ![flexbox-1](999-img/2021-08-29-12-30-33.png)
 
-Please note that all child elements of the `<div class="container">` will be
-affected of the `flex` configuration.
+please note that all child elements of the `<div class="container">` will be affected of the `flex` configuration.
 
-#### Configuring flexbox
+#### configuring flexbox
 
-##### Base configuration
+##### base configuration
 
-Adding:
+adding:
 
 ```css
 .container {
@@ -706,21 +697,19 @@ Adding:
 }
 ```
 
-Activates flexbox. This gives the output:
+activates flexbox. this gives the output:
 
 ![](999-img/2021-08-29-12-36-58.png)
 
-Please note that:
+please note that:
 
-- the grey color is the background color of the container (the empty part of the
-  container).
+- the grey color is the background color of the container (the empty part of the container).
 - horizontally, each element takes up the exactly space to fit its content.
-- vertically, all the elements takes the size of the tallest element. in this
-  case the `css` box which has a height of 250 px.
+- vertically, all the elements takes the size of the tallest element. in this case the `css` box which has a height of 250 px.
 
 ##### `align-items: center`
 
-Adding:
+adding:
 
 ```css
 .container {
@@ -729,8 +718,7 @@ Adding:
 }
 ```
 
-You will basically align all the boxes at the center of the container. elements
-will be at their true height. please see below:
+you will basically align all the boxes at the center of the container. elements will be at their true height. please see below:
 
 ![](999-img/2021-08-29-16-40-13.png)
 
@@ -743,8 +731,7 @@ will be at their true height. please see below:
 }
 ```
 
-Aligns all the boxes at the start of the container. Elements will be at their
-true height. Please see below:
+aligns all the boxes at the start of the container. elements will be at their true height. please see below:
 
 ![](999-img/2021-08-29-16-43-59.png)
 
@@ -757,8 +744,7 @@ true height. Please see below:
 }
 ```
 
-Aligns all the boxes at the end of the container. Elements will be at their true
-height. Please see below:
+aligns all the boxes at the end of the container. elements will be at their true height. please see below:
 
 ![](999-img/2021-08-29-16-46-26.png)
 
@@ -771,14 +757,13 @@ height. Please see below:
 }
 ```
 
-stretches the boxes to match the height of the tallest element in the container.
-the width will be exactly so that it fits its content of each box.
+stretches the boxes to match the height of the tallest element in the container. the width will be exactly so that it fits its content of each box.
 
 ![](999-img/2021-08-29-16-50-10.png)
 
 ##### `justify-content: center`
 
-Centers the elements in the container in the middle
+centers the elements in the container in the middle
 
 ```css
 .container {
@@ -787,13 +772,13 @@ Centers the elements in the container in the middle
 }
 ```
 
-Please see image below:
+please see image below:
 
 ![](999-img/2021-08-29-16-53-26.png)
 
 ##### `justify-content: space-between`
 
-Sets equal space among the elements to match the horizontal size of container.
+sets equal space among the elements to match the horizontal size of container.
 
 ```css
 .container {
@@ -802,16 +787,16 @@ Sets equal space among the elements to match the horizontal size of container.
 }
 ```
 
-Please see image below:
+please see image below:
 
 ![](999-img/2021-08-29-16-55-52.png)
 
-### Spacing and aligning flex items
+### spacing and aligning flex items
 
 `align-items:` vertical alignment
 `justify-content:` horizontal alignment
 
-Using following css code for the container:
+using following css code for the container:
 
 ```css
 .container {
@@ -830,11 +815,11 @@ this means that all elements are aligned like following:
 
 ![](999-img/2021-08-29-17-20-46.png)
 
-#### Overriding `align-items:` for elements with `align-self:`
+#### overriding `align-items:` for elements with `align-self:`
 
 you can override this for several or one element with the `align-self:` attribute.
 
-Example 1:
+example 1:
 
 ```css
 .el--1 {
@@ -842,11 +827,11 @@ Example 1:
 }
 ```
 
-Will give you:
+will give you:
 
 ![](999-img/2021-08-29-17-26-39.png)
 
-Example 2:
+example 2:
 
 ```css
 .el--5 {
@@ -854,13 +839,13 @@ Example 2:
 }
 ```
 
-Will give you the following output:
+will give you the following output:
 
 ![](999-img/2021-08-29-17-31-27.png)
 
-#### Rearranging individual elements with `order:`
+#### rearranging individual elements with `order:`
 
-Example 1:
+example 1:
 
 ```css
 .el--6 {
@@ -868,11 +853,11 @@ Example 1:
 }
 ```
 
-Which will give you:
+which will give you:
 
 ![](999-img/2021-08-29-17-50-13.png)
 
-Example 2:
+example 2:
 
 ```css
 .el--5 {
@@ -880,13 +865,13 @@ Example 2:
 }
 ```
 
-Will give you:
+will give you:
 
 ![](999-img/2021-08-29-17-57-15.png)
 
-#### Adding space between items with `gap:`
+#### adding space between items with `gap:`
 
-Example:
+example:
 
 ```css
 .container {
@@ -901,13 +886,13 @@ Example:
 }
 ```
 
-Given gap between the elements of 30px:
+givea gap between the elements of 30px:
 
 ![](999-img/2021-08-29-18-08-59.png)
 
 ### the `flex` property
 
-The default property of flex is:
+the default property of flex is:
 
 ```css
 .el {
@@ -919,9 +904,9 @@ The default property of flex is:
 
 #### `with` of elements with flex
 
-With `flex`, you should not use the `width:` property, you should instead use `flex-basis:`.
+with `flex`, you should not use the `width:` property, you should instead use `flex-basis:`.
 
-Example:
+example:
 
 ```css
 .el {
@@ -929,23 +914,15 @@ Example:
 }
 ```
 
-This will give following output:
+this will give following output:
 
 ![](999-img/2021-08-29-18-56-03.png)
 
 #### `flex-shrink:` property
 
-Please note that with `flex-basis:`, normally, the width of the elements will
-extend to 100px. but if them content in the element has larger size than
-specified, e.g. 100px as in the prior example, the `flex-basis:` proprty will
-extend 100px until it fits its contents. this is actually a feature of the
-`flex-grow:` property.
+please note that with `flex-basis:`, normally, the width of the elements will extend to 100px. but if them content in the element has larger size than specified, e.g. 100px as in the prior example, the `flex-basis:` proprty will extend 100px until it fits its contents. this is actually a feature of the `flex-grow:` property.
 
-Another note is that if you give the elements a really big size, lets say for
-example 200px. the elements will extend to so its fits its container, not more.
-so the ultime width of its element will be smaller if 200px is to large. the
-browsert will calibrate the width so the elements exactly fits its container.
-this feature is coming from the default value of `flex-shrink:1`.
+another note is that if you give the elements a really big size, lets say for example 200px. the elements will extend to so its fits its container, not more. so the ultime width of its element will be smaller if 200px is to large. the browsert will calibrate the width so the elements exactly fits its container. this feature is coming from the default value of `flex-shrink:1`.
 
 so, as an example:
 
@@ -960,12 +937,11 @@ so, as an example:
 }
 ```
 
-Will give the following output:
+will give the following output:
 
 ![](999-img/2021-08-29-19-04-55.png)
 
-If we now edit the default property of `flex-shrink:1` to `flex-shrink: 0`. this
-gives:
+if we now edit the default property of `flex-shrink:1` to `flex-shrink: 0`. this gives:
 
 ```css
 .el {
@@ -982,11 +958,11 @@ this gives the output:
 
 ![](999-img/2021-08-29-19-11-12.png)
 
-This basically forces every element to 200px even if it extends beyond the container.
+this basically forces every element to 200px even if it extends beyond the container.
 
 #### `flex-grow:` property
 
-The following code:
+the following code:
 
 ```css
 .el {
@@ -994,11 +970,11 @@ The following code:
 }
 ```
 
-Gives:
+gives:
 
 ![](999-img/2021-08-29-19-38-10.png)
 
-But extending the code with,
+but extending the code with,
 
 ```css
 .el {
@@ -1011,12 +987,9 @@ gives the output:
 
 ![](999-img/2021-08-29-19-40-30.png)
 
-The `flex-grow:1` property divides the maxiumum space in the container evenly
-among the elements inside the container.
+the `flex-grow:1` property divides the maxiumum space in the container evenly among the elements inside the container.
 
-If you set the `flex-grow:1` property for an individual element, the other
-elements will fill up its content and the element that has the property
-`flex-grow:1` will fill up the rest of the empty space isnide the container.
+if you set the `flex-grow:1` property for an individual element, the other elemenhts will fill up its content and the element that has the property `flex-grow:1` will fill up the rest of the empty space isnide the container.
 
 ```css
 .el--1 {
@@ -1024,19 +997,15 @@ elements will fill up its content and the element that has the property
 }
 ```
 
-Gives:
+gives: ;
 
 ![](999-img/2021-08-29-19-47-49.png)
 
-The value of `flex-grow:` is also relative to the rest of the elements. for
-example, if we in the container have `.el {flex-grow:1}` and in a single element
-have `.el--1 { flex-grow:2}`. this means that the element 1 will have 2 times
-the size of the available space as compared to the rest of the elements.
+the value of `flex-grow:` is also relative to the rest of the elements. for example, if we in the container have `.el {flex-grow:1}` and in a single element have `.el--1 { flex-grow:2}`. this means that the element 1 will have 2 times the size of the available space as compared to the rest of the elements.
 
-#### The `flex:` property
+#### the `flex:` property
 
-`flex:` property is a short for `flex-grow:`, `flex-shrink:` and `flex-basis:`.
-so for example, `flex: 0 0 200px;` actually means:
+`flex:` property is a short for `flex-grow:`, `flex-shrink:` and `flex-basis:`. so for example, `flex: 0 0 200px;` actually means:
 
 ```css
 .el {
@@ -1065,14 +1034,13 @@ you should always use `flex:` and not the other three ones.
 when you need a one dimensional layout: use flexbox
 when you need a two dimensional layout: use flex grid
 
-Create a grid container by setting `display: grid` to an container. the the
-items / containers in this container becomes the grid items.
+create a grid container by setting `display: grid` to an container. the the items / containers in this container becomes the grid items.
 
 grid-lines surrounds the grid cells.
 
-Gutters is a css word for gaps.
+gutters is a css word for gaps.
 
-Grid track is basically a row or column.
+grid track is basically a row or column.
 
 ```css
 display: grid;
@@ -1106,7 +1074,7 @@ grid-tempplate-columns: repeat(4, 1fr); /* short for 1fr 1fr 1fr 1fr */
 
 all the same as above implies for rows.
 
-### Placing and spanning grid items
+### palacing and and spanning grid items
 
 ```css
 .el--8 {
@@ -1135,9 +1103,9 @@ all the same as above implies for rows.
 }
 ```
 
-Spanning works exactly the same with rows i.e. `grid-row`.
+spanning works exactly the same with rows i.e. `grid-row`.
 
-### Aligning grid items
+### aligning grid items
 
 ```css
 /* CSS GRID */
