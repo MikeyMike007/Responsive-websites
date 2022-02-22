@@ -1,10 +1,10 @@
-# HTML and CSS Notes
+# html and css notes
 
-## HTML tags
+## html tags
 
-| Tag                              | Description                      |
+| tag                              | description                      |
 | -------------------------------- | -------------------------------- |
-| `<DOCTYPE html>`                 |                                  |
+| `<doctype html>`                 |                                  |
 | `<html>`                         |                                  |
 | `<head>`                         |                                  |
 | `<body>`                         |                                  |
@@ -17,180 +17,180 @@
 | `<h5>`                           |                                  |
 | `<h6>`                           |                                  |
 | `<nav>`                          |                                  |
-| `<a href="mypage.html">Link</a>` |                                  |
+| `<a href="mypage.html">link</a>` |                                  |
 | `<article>`                      |                                  |
 | `<img src="image.jpg"/>`         |                                  |
 | `<p>`                            |                                  |
 | `<strong>`                       |                                  |
 | `<b>`                            |                                  |
 | `<em>`                           |                                  |
-| `<ol>`                           | Numbered list                    |
-| `<ul>`                           | Bullet list                      |
-| `<li>`                           | Bullet (inside `<ul>` or `<ol>`) |
+| `<ol>`                           | numbered list                    |
+| `<ul>`                           | bullet list                      |
+| `<li>`                           | bullet (inside `<ul>` or `<ol>`) |
 | `<footer>`                       |                                  |
 | `<aside>`                        |                                  |
 | `<button>`                       |                                  |
 | `<h1 style="color: blue">`       |                                  |
-| `<style>`                        | Css                              |
+| `<style>`                        | css                              |
 | `footer`                         |                                  |
 
-## CSS tags
+## css tags
 
-| Tag                          | Description                                                                  |
+| tag                          | description                                                                  |
 | ---------------------------- | ---------------------------------------------------------------------------- |
-| `font-size`                  | Size of font e.g. 20px                                                       |
-| `font-family`                | Font e.g. `sans-serif`                                                       |
-| `text-transform`             | Lowercase, Uppercase etc.                                                    |
-| `font-style`                 | Italic, bold, etc                                                            |
-| `text-align`                 | Left, center, right, etc                                                     |
-| `line-height`                | Spacing between lines e.g for `<p>`                                          |
-| `list-style`                 | Square, circle, number                                                       |
-| `background-color`           | Background color for area                                                    |
-| `border`                     | Border                                                                       |
-| `border-top`                 | Top border                                                                   |
-| `border-bottom`              | Bottom border                                                                |
+| `font-size`                  | size of font e.g. 20px                                                       |
+| `font-family`                | font e.g. `sans-serif`                                                       |
+| `text-transform`             | lowercase, uppercase etc.                                                    |
+| `font-style`                 | italic, bold, etc                                                            |
+| `text-align`                 | left, center, right, etc                                                     |
+| `line-height`                | spacing between lines e.g for `<p>`                                          |
+| `list-style`                 | square, circle, number                                                       |
+| `background-color`           | background color for area                                                    |
+| `border`                     | border                                                                       |
+| `border-top`                 | top border                                                                   |
+| `border-bottom`              | bottom border                                                                |
 | `border: 5px solid black`    | 5px solid black border                                                       |
-| `* {}`                       | Whole document                                                               |
-| `body {}`                    | Whole body tag                                                               |
-| `margin`                     | Sets the margin area on all four sides of an element                         |
+| `* {}`                       | whole document                                                               |
+| `body {}`                    | whole body tag                                                               |
+| `margin`                     | sets the margin area on all four sides of an element                         |
 | `margin: 1px 2px`            | vertical-horizontal margin                                                   |
 | `margin: 1px 2px 3px`        | top-horizontal-bottom margin                                                 |
 | `margin: 1px 2px 3px 4px`    | top-right-botton-left margin                                                 |
-| `margin-bottom: 1px`         | Botton margin                                                                |
-| `margin-left: 1px`           | Left margin                                                                  |
-| `margin-top: 1px`            | Top margin                                                                   |
-| `margin-right: 1px`          | Right margin                                                                 |
-| `text-align:`                | Alignement of text                                                           |
-| `text-transform:`            | E.g. `uppercase` or `lowercase`                                              |
-| `padding:`                   | Sets the padding area for all four sides of an element                       |
-| `font-weight:`               | E.g. `bold`                                                                  |
-| `text-decoration`            | E.g. `underline`, `none`. Used with links                                    |
-| `cursor:`                    | Sets the mouse cursor at hoover                                              |
-| `<a hre... class="x">x</a>`  | Please see below - Css and links                                             |
-| `.x:hover {}`                | Style at hoover in class `x`                                                 |
-| `.x:active {}`               | Style at link click                                                          |
-| `.x:link {}`                 | Link style                                                                   |
-| `.x:visited {}`              | Link style when visited                                                      |
-| `<ul class="list">`          | See blow for styling                                                         |
-| `.list{list-style: square;}` | Squared bullets in list                                                      |
-| `.list li {}`                | Styling of each bullet e.g. `margin-left:`                                   |
-| `if <p id="test">`           | Use then `#test {}`                                                          |
-| `if <p>`                     | Use then `p {}`                                                              |
-| `if <p class="test">`        | Use then `.test{}`                                                           |
-| `position:`                  | E.g. `absolute`, `relative`                                                  |
-| `.x{position: relative}`     | Offset relative to itself with (see: position below)                         |
-| `.x{position: absolute}`     | Removed from normal flow of document (see: position below)                   |
-| `width`                      | Sets an elements width                                                       |
-| `li:first-child {}`          | First bullet                                                                 |
-| `li:last-child {}`           | Last bullet                                                                  |
-| `li:nth-child(even)`         | Even numbered bullets                                                        |
-| `display:`                   | E.g. `inline`, `inline-block`, `block`. (See:display)                        |
-| `a:link {}`                  | Style for links in `<a>` tags                                                |
-| `a:hover {}`                 | Style for links in `<a>` when hoovered                                       |
-| `a:active {}`                | Style for links in `<a>` when clicked                                        |
-| `nav a:link {}`              | Style for links in `<a>` which itself is in a `<nav>` tag                    |
-| `nav a:link:last-child {}`   | Last link in `<a>` -> `<navb>`                                               |
-| `button {}`                  | Design for a `<button>` tag.                                                 |
-| `h3 + p {}`                  | Style the `<p>` directly after `h3` (see: + operator)                        |
-| `h3 + p::first-line {}`      | Style the first line of the paragraph which lies after `<h3>`                |
-| `h1::first-letter {}`        | Style the first letter in `<h1>`                                             |
-| `element::after {}`          | See ::after and ::before                                                     |
-| `element::before {}`         | See `::after` and `::before`                                                 |
-| `float:`                     | Let the element float e.g. `float: left;`                                    |
-| `clear:`                     | Clear the float e.g. `clear: both` if there is floats both on left and right |
-| `box-sizing:`                | E.g. `border-box` or `content-box`                                           |
+| `margin-bottom: 1px`         | botton margin                                                                |
+| `margin-left: 1px`           | left margin                                                                  |
+| `margin-top: 1px`            | top margin                                                                   |
+| `margin-right: 1px`          | right margin                                                                 |
+| `text-align:`                | alignement of text                                                           |
+| `text-transform:`            | e.g. `uppercase` or `lowercase`                                              |
+| `padding:`                   | sets the padding area for all four sides of an element                       |
+| `font-weight:`               | e.g. `bold`                                                                  |
+| `text-decoration`            | e.g. `underline`, `none`. used with links                                    |
+| `cursor:`                    | sets the mouse cursor at hoover                                              |
+| `<a hre... class="x">x</a>`  | please see below - css and links                                             |
+| `.x:hover {}`                | style at hoover in class `x`                                                 |
+| `.x:active {}`               | style at link click                                                          |
+| `.x:link {}`                 | link style                                                                   |
+| `.x:visited {}`              | link style when visited                                                      |
+| `<ul class="list">`          | see blow for styling                                                         |
+| `.list{list-style: square;}` | squared bullets in list                                                      |
+| `.list li {}`                | styling of each bullet e.g. `margin-left:`                                   |
+| `if <p id="test">`           | use then `#test {}`                                                          |
+| `if <p>`                     | use then `p {}`                                                              |
+| `if <p class="test">`        | use then `.test{}`                                                           |
+| `position:`                  | e.g. `absolute`, `relative`                                                  |
+| `.x{position: relative}`     | offset relative to itself with (see: position below)                         |
+| `.x{position: absolute}`     | removed from normal flow of document (see: position below)                   |
+| `width`                      | sets an elements width                                                       |
+| `li:first-child {}`          | first bullet                                                                 |
+| `li:last-child {}`           | last bullet                                                                  |
+| `li:nth-child(even)`         | even numbered bullets                                                        |
+| `display:`                   | e.g. `inline`, `inline-block`, `block`. (see:display)                        |
+| `a:link {}`                  | style for links in `<a>` tags                                                |
+| `a:hover {}`                 | style for links in `<a>` when hoovered                                       |
+| `a:active {}`                | style for links in `<a>` when clicked                                        |
+| `nav a:link {}`              | style for links in `<a>` which itself is in a `<nav>` tag                    |
+| `nav a:link:last-child {}`   | last link in `<a>` -> `<navb>`                                               |
+| `button {}`                  | design for a `<button>` tag.                                                 |
+| `h3 + p {}`                  | style the `<p>` directly after `h3` (see: + operator)                        |
+| `h3 + p::first-line {}`      | style the first line of the paragraph which lies after `<h3>`                |
+| `h1::first-letter {}`        | style the first letter in `<h1>`                                             |
+| `element::after {}`          | see ::after and ::before                                                     |
+| `element::before {}`         | see `::after` and `::before`                                                 |
+| `float:`                     | let the element float e.g. `float: left;`                                    |
+| `clear:`                     | clear the float e.g. `clear: both` if there is floats both on left and right |
+| `box-sizing:`                | e.g. `border-box` or `content-box`                                           |
 
-### Position
+### position
 
-#### Relative
+#### relative
 
-The element is positioned according to the normal flow of the document, and then offset relative to itself based on the values of top, right, bottom, and left. The offset does not affect the position of any other elements; thus, the space given for the element in the page layout is the same as if position were static.
+the element is positioned according to the normal flow of the document, and then offset relative to itself based on the values of top, right, bottom, and left. the offset does not affect the position of any other elements; thus, the space given for the element in the page layout is the same as if position were static.
 
-#### Absolute
+#### absolute
 
-The element is removed from the normal document flow, and no space is created for the element in the page layout. It is positioned relative to its closest positioned ancestor, if any; otherwise, it is placed relative to the initial containing block. Its final position is determined by the values of top, right, bottom, and left.
+the element is removed from the normal document flow, and no space is created for the element in the page layout. it is positioned relative to its closest positioned ancestor, if any; otherwise, it is placed relative to the initial containing block. its final position is determined by the values of top, right, bottom, and left.
 
-#### Static
+#### static
 
-The element is positioned according to the normal flow of the document. The top, right, bottom, left, and z-index properties have no effect. This is the default value.
+the element is positioned according to the normal flow of the document. the top, right, bottom, left, and z-index properties have no effect. this is the default value.
 
 ### display
 
-The display CSS property sets whether an element is treated as a block or inline element and the layout used for its children, such as flow layout, grid or flex.
+the display css property sets whether an element is treated as a block or inline element and the layout used for its children, such as flow layout, grid or flex.
 
-Formally, the display property sets an element's inner and outer display types. The outer type sets an element's participation in flow layout; the inner type sets the layout of children. Some values of display are fully defined in their own individual specifications; for example the detail of what happens when display: flex is declared is defined in the CSS Flexible Box Model specification
+formally, the display property sets an element's inner and outer display types. the outer type sets an element's participation in flow layout; the inner type sets the layout of children. some values of display are fully defined in their own individual specifications; for example the detail of what happens when display: flex is declared is defined in the css flexible box model specification
 
 #### block
 
-The element generates a block element box, generating line breaks both before and after the element when in the normal flow.
+the element generates a block element box, generating line breaks both before and after the element when in the normal flow.
 
 #### inline
 
-The element generates one or more inline element boxes that do not generate line breaks before or after themselves. In normal flow, the next element will be on the same line if there is space.
+the element generates one or more inline element boxes that do not generate line breaks before or after themselves. in normal flow, the next element will be on the same line if there is space.
 
 #### inline-block
 
-The element generates a block element box that will be flowed with surrounding content as if it were a single inline box (behaving much like a replaced element would).
+the element generates a block element box that will be flowed with surrounding content as if it were a single inline box (behaving much like a replaced element would).
 
 ### + operator
 
-The “+” sign selector is used to select the elements that are placed immediately after the specified element but not inside the particular elements.
+the “+” sign selector is used to select the elements that are placed immediately after the specified element but not inside the particular elements.
 
 ### `::after` and `::before`
 
-Example:
+example:
 
 ![::after](999-img/2021-08-26-21-20-16.png)
 
-Example:
+example:
 
 ![::afterv1](999-img/2021-08-26-21-22-13.png)
 
-### Float
+### float
 
-E.g. `float: none`, `float: left;` or `float:right`.
+e.g. `float: none`, `float: left;` or `float:right`.
 
-The float CSS property places an element on the left or right side of its container, allowing text and inline elements to wrap around it. The element is removed from the normal flow of the page, though still remaining a part of the flow (in contrast to absolute positioning).
+the float css property places an element on the left or right side of its container, allowing text and inline elements to wrap around it. the element is removed from the normal flow of the page, though still remaining a part of the flow (in contrast to absolute positioning).
 
-Example of `float:right`:
+example of `float:right`:
 
 ![float:right](999-img/2021-08-28-14-02-46.png)
 
 ### `border-box`
 
-The box-sizing CSS property sets how the total width and height of an element is calculated.
+the box-sizing css property sets how the total width and height of an element is calculated.
 
-By default in the CSS box model, the width and height you assign to an element is applied only to the element's content box. If the element has any border or padding, this is then added to the width and height to arrive at the size of the box that's rendered on the screen. This means that when you set width and height, you have to adjust the value you give to allow for any border or padding that may be added. For example, if you have four boxes with width: 25%;, if any has left or right padding or a left or right border, they will not by default fit on one line within the constraints of the parent container.
+by default in the css box model, the width and height you assign to an element is applied only to the element's content box. if the element has any border or padding, this is then added to the width and height to arrive at the size of the box that's rendered on the screen. this means that when you set width and height, you have to adjust the value you give to allow for any border or padding that may be added. for example, if you have four boxes with width: 25%;, if any has left or right padding or a left or right border, they will not by default fit on one line within the constraints of the parent container.
 
-The box-sizing property can be used to adjust this behavior:
+the box-sizing property can be used to adjust this behavior:
 
-- content-box gives you the default CSS box-sizing behavior. If you set an element's width to 100 pixels, then the element's content box will be 100 pixels wide, and the width of any border or padding will be added to the final rendered width, making the element wider than 100px.
+- content-box gives you the default css box-sizing behavior. if you set an element's width to 100 pixels, then the element's content box will be 100 pixels wide, and the width of any border or padding will be added to the final rendered width, making the element wider than 100px.
 
-- border-box tells the browser to account for any border and padding in the values you specify for an element's width and height. If you set an element's width to 100 pixels, that 100 pixels will include any border or padding you added, and the content box will shrink to absorb that extra width. This typically makes it much easier to size elements. box-sizing: border-box is the default styling that browsers use for the `<table>`, `<select>`, and `<button>` elements, and for `<input>` elements whose type is radio, checkbox, reset, button, submit, color, or search.
+- border-box tells the browser to account for any border and padding in the values you specify for an element's width and height. if you set an element's width to 100 pixels, that 100 pixels will include any border or padding you added, and the content box will shrink to absorb that extra width. this typically makes it much easier to size elements. box-sizing: border-box is the default styling that browsers use for the `<table>`, `<select>`, and `<button>` elements, and for `<input>` elements whose type is radio, checkbox, reset, button, submit, color, or search.
 
-Please note: It is often useful to set box-sizing to border-box to layout elements. This makes dealing with the sizes of elements much easier, and generally eliminates a number of pitfalls you can stumble on while laying out your content. On the other hand, when using position: relative or position: absolute, use of box-sizing: content-box allows the positioning values to be relative to the content, and independent of changes to border and padding sizes, which is sometimes desirable.
+please note: it is often useful to set box-sizing to border-box to layout elements. this makes dealing with the sizes of elements much easier, and generally eliminates a number of pitfalls you can stumble on while laying out your content. on the other hand, when using position: relative or position: absolute, use of box-sizing: content-box allows the positioning values to be relative to the content, and independent of changes to border and padding sizes, which is sometimes desirable.
 
-## Semantic HTML
+## semantic html
 
-Semantic HTML: In addition to function, tags also have a meaning.
+semantic html: in addition to function, tags also have a meaning.
 
-## CSS
+## css
 
-Cascading Style Sheets
+cascading style sheets
 
-### Inline CSS
+### inline css
 
-Writing css code inside element e.g. `<h1 style="color: blue">This text is blue</h1>`. NOT RECOMMENDED!
+writing css code inside element e.g. `<h1 style="color: blue">this text is blue</h1>`. not recommended!
 
-### Internal CSS
+### internal css
 
-Writing Css code inside `<style>` brackets. The `<style>` tags shall be in the
+writing css code inside `<style>` brackets. the `<style>` tags shall be in the
 `<header>` section i.e.
 
 ```html
 <html>
   <head>
-    <title>Title</title>
+    <title>title</title>
     <style>
       h1 {
         color: blue;
@@ -201,9 +201,9 @@ Writing Css code inside `<style>` brackets. The `<style>` tags shall be in the
 </html>
 ```
 
-### External Css
+### external css
 
-Create a new file `style.css` like:
+create a new file `style.css` like:
 
 ```css
 h1 {
@@ -214,15 +214,15 @@ h1 {
 and link the file `style.css` in the html file within the `<head>` segment with
 the following code tag: `<link href="style.css" rel="stylesheet">`.
 
-### Inheritance
+### inheritance
 
-If you style `<p>`, all the tags within the `<p>` tag will follow. i.e.
+if you style `<p>`, all the tags within the `<p>` tag will follow. i.e.
 if you have `<p>hey <strong>you</strong></p>` and you style `<p>`, then
 `<strong>` will inherit the style.
 
-### Combining selectors
+### combining selectors
 
-You can use the same properties for many selecters at the same time e.g.,
+you can use the same properties for many selecters at the same time e.g.,
 
 ```css
 h1,
@@ -235,7 +235,7 @@ p {
 }
 ```
 
-Modify `<p>` tags only in the `<footer>` - use then:
+modify `<p>` tags only in the `<footer>` - use then:
 
 ```css
 footer p {
@@ -243,7 +243,7 @@ footer p {
 }
 ```
 
-Same for `<p>` tags in headers - use then
+same for `<p>` tags in headers - use then
 
 ```css
 header p {
@@ -251,48 +251,48 @@ header p {
 }
 ```
 
-Following code formats `<p>` tags which is inside a `<header>` tag which itself
+following code formats `<p>` tags which is inside a `<header>` tag which itself
 is in a `<article>` tag.
 
-### Classes and id-selectors
+### classes and id-selectors
 
-Comment in css: `/* comment */`
+comment in css: `/* comment */`
 
-Comment in VS-code: `<C-/>`:
+comment in vs-code: `<c-/>`:
 
-Working with ID's in CSS:
+working with id's in css:
 
-- Specify id in a html tag like `<p id="copyright>` or `<p id="author">` and
-  then use `#author {}` and `#copyright{}` in the css file for styling. Make sure
-  that there can only be 1 id in the html file. If you want to use the styling in
-  several different places you need to use classes. These are specified in the
+- specify id in a html tag like `<p id="copyright>` or `<p id="author">` and
+  then use `#author {}` and `#copyright{}` in the css file for styling. make sure
+  that there can only be 1 id in the html file. if you want to use the styling in
+  several different places you need to use classes. these are specified in the
   same way i.e. `<p class="related-author">` and then `.related-author{}` in the
   css file.
 
-Disable bullet points: `ul {list-style = none;}`
+disable bullet points: `ul {list-style = none;}`
 
-You should use classes and not id's.
+you should use classes and not id's.
 
 color can be specified as `rgb(x,y,z)` or `#hexvalue`. `rgba()` also specifies
 transparancy.
 
-Selectors are additive.
+selectors are additive.
 
-You can basically give an area a name i.e. `<header>`and then only choose to
-style it with `header {background-color: black;}` If you have similar areas of
+you can basically give an area a name i.e. `<header>`and then only choose to
+style it with `header {background-color: black;}` if you have similar areas of
 `<header>`, you can basically add a class to it.
 
-If you want to add a background color to whole document, just add `body {background-color: blue;}`
+if you want to add a background color to whole document, just add `body {background-color: blue;}`
 
-Two methods set the first bullet list to another style than the rest of them:
+two methods set the first bullet list to another style than the rest of them:
 
-1. Set class "first-li" to all first `<li>` tags in a list i.e. `<li class="first-li">`
-2. Without modifying the html code, you can write following code in the `css`
-   file `li:first-child {font-weight: bold;}` This is called pseudo-classes.
+1. set class "first-li" to all first `<li>` tags in a list i.e. `<li class="first-li">`
+2. without modifying the html code, you can write following code in the `css`
+   file `li:first-child {font-weight: bold;}` this is called pseudo-classes.
 
-### Pseudo-classes
+### pseudo-classes
 
-Examples of pseudo classe
+examples of pseudo classe
 s
 
 ```css
@@ -306,7 +306,7 @@ li:last-child {
   font-style: italic;
 }
 
-/* Second list element */
+/* second list element */
 li:nth-child(2) {
   color: red;
 }
@@ -317,25 +317,25 @@ li:nth-child(odd) {
 }
 ```
 
-Another example that will not work which is a common missconseption on how
+another example that will not work which is a common missconseption on how
 pseudo classes works.
 
-For example, if we have this html code:
+for example, if we have this html code:
 
 ```html
 <article>
   <header>
-    <h2>The Basic Language of the Web: HTML</h2>
+    <h2>the basic language of the web: html</h2>
 
     <img
       src="img/laura-jones.jpg"
-      alt="Headshot of Laura Jones"
+      alt="headshot of laura jones"
       height="50"
       width="50"
     />
 
     <p id="author">
-      Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
+      posted by <strong>laura jones</strong> on monday, june 21st 2027
     </p>
   </header>
 </article>
@@ -346,23 +346,23 @@ and we are using the following `css` code:
 `article p:first-child {color:red}` will not work since `<p>` is not the first
 child of `<article>`, it is header which is the first child of `<article>` will
 not work since `<p>` is not the first child of `<article>`, it is header which
-is the first child of `<article>`. So what would work in this case is only
+is the first child of `<article>`. so what would work in this case is only
 `artcile header { color:purple;}`.
 
-In the following html code we see that `<p>` is the last child of `<article>`,
+in the following html code we see that `<p>` is the last child of `<article>`,
 here we could use: `article p:last-child { color: red;}` to style that.
 
-### Styling hyperlinks
+### styling hyperlinks
 
 ```css
-/* Styling hyperlinks */
+/* styling hyperlinks */
 a:link {
   color: #1098ad;
-  text-decoration: none; /* NO UNDERLINE ON LINKS */
+  text-decoration: none; /* no underline on links */
 }
 
 a:visited {
-  color: #1098ad; /* SAME COLOR ON LINKS*/
+  color: #1098ad; /* same color on links*/
 }
 
 a:hover {
@@ -377,37 +377,37 @@ a:active {
 }
 ```
 
-### Chrome dev tools
+### chrome dev tools
 
-You can do some testing under following link without changing any code:
+you can do some testing under following link without changing any code:
 
-`Right click->inspect->elements`
+`right click->inspect->elements`
 
-### Conflicts between selectors
+### conflicts between selectors
 
-1. SHOULD NOT BE USED: Declaration marked `!important`.
-2. SHOULD NOT BE USED: Inline style (style attribute in HTML)
-3. Highest priority: ID selector (Last selector gets applied)
-4. Class (.) or pseudo class (:) selector
-5. Element selector (p, div, li, etc)
-6. Universal selector
+1. should not be used: declaration marked `!important`.
+2. should not be used: inline style (style attribute in html)
+3. highest priority: id selector (last selector gets applied)
+4. class (.) or pseudo class (:) selector
+5. element selector (p, div, li, etc)
+6. universal selector
 
-### Inheritance and the universal selector
+### inheritance and the universal selector
 
-Inheritance comes from parent tags.
+inheritance comes from parent tags.
 
-Style `a (link)` and `p` tags within `a` nav tag:
+style `a (link)` and `p` tags within `a` nav tag:
 
 `nav a:link, nav p { font-size: 18px; }`
 
 or you could just do: `nav { font-size: 18px;}` which basically is the same if
 there is only a `<a>` and `<p>` tag inside the `<nav>`.
 
-Universal selector: `* {}`, you could also use `body {}`.
+universal selector: `* {}`, you could also use `body {}`.
 
-### Box model
+### box model
 
-Following codes are equal:
+following codes are equal:
 
 ```css
 .main-header {
@@ -423,49 +423,49 @@ Following codes are equal:
 }
 ```
 
-### Collapsing margins
+### collapsing margins
 
-Something about the how css adds upp margins between two boxes.
+something about the how css adds upp margins between two boxes.
 
-### Images
+### images
 
-Set the width or height to what is specified in the html tag, use:
+set the width or height to what is specified in the html tag, use:
 
 `.post-img { width: 100%; height: auto;}`
 
-The `width: 100%` is making the width of the pciture dynamic.
+the `width: 100%` is making the width of the pciture dynamic.
 
-### Centering our page
+### centering our page
 
-Add container of what you want to center line `<div class="container">`.
-Add following in the css `.container {width: 700px}; margin-left: auto; margin-right: auto;}` This centers the page and is dynamic.
+add container of what you want to center line `<div class="container">`.
+add following in the css `.container {width: 700px}; margin-left: auto; margin-right: auto;}` this centers the page and is dynamic.
 
-### Different types of boxes
+### different types of boxes
 
-- Inline boxes: Dont create any vertical space outside the element i.e. the
-  margin: i.e. `nav a: link {margin: 20px; }` wont work since it does not create any vertical space. The padding will
-  indeed work since it is inside the box i.e. `nav a:link {padding: 20px;}`. To
-  change it to an block level element with `nav a:link {margin:20px; padding:20px; display: block;}`. This will get the `margin` to work..
+- inline boxes: dont create any vertical space outside the element i.e. the
+  margin: i.e. `nav a: link {margin: 20px; }` wont work since it does not create any vertical space. the padding will
+  indeed work since it is inside the box i.e. `nav a:link {padding: 20px;}`. to
+  change it to an block level element with `nav a:link {margin:20px; padding:20px; display: block;}`. this will get the `margin` to work..
 
-- Block level elements:
+- block level elements:
 
-- Inline block element: Combination of inline element and box element e.g. `nav a: link {margin-top:30px; display:inline-block;}`
+- inline block element: combination of inline element and box element e.g. `nav a: link {margin-top:30px; display:inline-block;}`
 
-- Images are inline-block elements.
+- images are inline-block elements.
 
-### Absolute positioning
+### absolute positioning
 
-If you want to add a **Like Button** in the botton of the page (right). You can
+if you want to add a **like button** in the botton of the page (right). you can
 first add a `<button>` tag in the html code then in the css code you can
 specify: `button { position: absolute; bottom: 50px; right: 50px;}` and then in
-the body you can add `body {position:relative;}`. You can also put the
+the body you can add `body {position:relative;}`. you can also put the
 `relative` position in a container.
 
-Should only be used for single elements.
+should only be used for single elements.
 
-### Pseudo elements
+### pseudo elements
 
-Style first letter in `<h1>` directly from css:
+style first letter in `<h1>` directly from css:
 
 ```css
 h1::first-letter {
@@ -474,7 +474,7 @@ h1::first-letter {
 }
 ```
 
-Style first line in all `<p>` tags:
+style first line in all `<p>` tags:
 
 ```css
 p::first-line {
@@ -482,7 +482,7 @@ p::first-line {
 }
 ```
 
-Style the first line in a paragraph directly after a `<h3>` tag:
+style the first line in a paragraph directly after a `<h3>` tag:
 
 ```css
 h3 + p::first-line {
@@ -490,14 +490,14 @@ h3 + p::first-line {
 }
 ```
 
-Add a cool "top box" next to a `<h2>` header:
+add a cool "top box" next to a `<h2>` header:
 
 ```css
 h2 {
 position:relative;
 }
 h2::after {
-content: "TOP";
+content: "top";
 background-color: yellow;
 color:black;
 font-size: 16px;
@@ -509,17 +509,17 @@ top:-15px;
 right: -25px;
 ```
 
-### Centering
+### centering
 
-One ususal misstake that people do is that they try to center e.g. text inside
-inline elements. For example, you have:
+one ususal misstake that people do is that they try to center e.g. text inside
+inline elements. for example, you have:
 
 ```html
 <nav>
-  <a href="blog.html">Blog</a>
-  <a href="#">Challenges</a>
-  <a href="#">Flexbox</a>
-  <a href="#">CSS Grid</a>
+  <a href="blog.html">blog</a>
+  <a href="#">challenges</a>
+  <a href="#">flexbox</a>
+  <a href="#">css grid</a>
 </nav>
 ```
 
@@ -531,13 +531,13 @@ nav a:link {
 }
 ```
 
-This will not work since inline elements dont have any space over for what it
+this will not work since inline elements dont have any space over for what it
 contains.
 
-The solution is that you should place the `text-align:center;` property to its
+the solution is that you should place the `text-align:center;` property to its
 parent.
 
-The solution is that you should place the `text-align:center;` property to its
+the solution is that you should place the `text-align:center;` property to its
 parent i.e.
 
 ```css
@@ -546,39 +546,39 @@ nav {
 }
 ```
 
-## Layouts
+## layouts
 
-Three types of layouts:
+three types of layouts:
 
-1. Floats
-2. Flexbox
-3. Grid
+1. floats
+2. flexbox
+3. grid
 
-### Float
+### float
 
-If a container, header, or whatsoever contains child elements which all are floated, then the height of the container will collapse.
-You can clear floats by adding a `<div class="clear"></div>` element into the container and in the css code state: `.clear {clear: both};`.
+if a container, header, or whatsoever contains child elements which all are floated, then the height of the container will collapse.
+you can clear floats by adding a `<div class="clear"></div>` element into the container and in the css code state: `.clear {clear: both};`.
 
-You could also add a class called `clearfix` to the parent element and then add a new last child element with `.clearfix::after { clear: both; content:''; display: block}`
+you could also add a class called `clearfix` to the parent element and then add a new last child element with `.clearfix::after { clear: both; content:''; display: block}`
 
-If the contents dont fit in a flow dynamic based on the components weights, you can use the `box-sizing: border-box;`. If you want this box model be applied to all elements on the page, just put it in the universal selector `* {}`. You cannot put it in the body section since `box-sizing:` doesnt get inherited.
+if the contents dont fit in a flow dynamic based on the components weights, you can use the `box-sizing: border-box;`. if you want this box model be applied to all elements on the page, just put it in the universal selector `* {}`. you cannot put it in the body section since `box-sizing:` doesnt get inherited.
 
-## Flexbox
+## flexbox
 
-### Introduction
+### introduction
 
-#### Base code
+#### base code
 
-Following code gives:
+following code gives:
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flexbox</title>
+    <title>flexbox</title>
     <style>
       .el--1 {
         background-color: blueviolet;
@@ -607,7 +607,7 @@ Following code gives:
       }
 
       .container {
-        /* STARTER */
+        /* starter */
         font-family: sans-serif;
         background-color: #ddd;
         font-size: 34px;
@@ -617,9 +617,9 @@ Following code gives:
   </head>
   <body>
     <div class="container">
-      <div class="el el--1">HTML</div>
+      <div class="el el--1">html</div>
       <div class="el el--2">and</div>
-      <div class="el el--3">CSS</div>
+      <div class="el el--3">css</div>
       <div class="el el--4">are</div>
       <div class="el el--5">amazing</div>
       <div class="el el--6">languages</div>
@@ -630,17 +630,17 @@ Following code gives:
 </html>
 ```
 
-Following output:
+following output:
 
 ![flexbox-1](999-img/2021-08-29-12-30-33.png)
 
-Please note that all child elements of the `<div class="container">` will be affected of the `flex` configuration.
+please note that all child elements of the `<div class="container">` will be affected of the `flex` configuration.
 
-#### Configuring flexbox
+#### configuring flexbox
 
-##### Base configuration
+##### base configuration
 
-Adding:
+adding:
 
 ```css
 .container {
@@ -648,19 +648,19 @@ Adding:
 }
 ```
 
-activates flexbox. This gives the output:
+activates flexbox. this gives the output:
 
 ![](999-img/2021-08-29-12-36-58.png)
 
-Please note that:
+please note that:
 
-- The grey color is the background color of the container (the empty part of the container).
-- Horizontally, each element takes up the exactly space to fit its content.
-- Vertically, all the elements takes the size of the tallest element. In this case the `CSS` box which has a height of 250 px.
+- the grey color is the background color of the container (the empty part of the container).
+- horizontally, each element takes up the exactly space to fit its content.
+- vertically, all the elements takes the size of the tallest element. in this case the `css` box which has a height of 250 px.
 
 ##### `align-items: center`
 
-Adding:
+adding:
 
 ```css
 .container {
@@ -669,7 +669,7 @@ Adding:
 }
 ```
 
-You will basically align all the boxes at the center of the container. Elements will be at their true height. Please see below:
+you will basically align all the boxes at the center of the container. elements will be at their true height. please see below:
 
 ![](999-img/2021-08-29-16-40-13.png)
 
@@ -682,7 +682,7 @@ You will basically align all the boxes at the center of the container. Elements 
 }
 ```
 
-Aligns all the boxes at the start of the container. Elements will be at their true height. Please see below:
+aligns all the boxes at the start of the container. elements will be at their true height. please see below:
 
 ![](999-img/2021-08-29-16-43-59.png)
 
@@ -695,7 +695,7 @@ Aligns all the boxes at the start of the container. Elements will be at their tr
 }
 ```
 
-Aligns all the boxes at the end of the container. Elements will be at their true height. Please see below:
+aligns all the boxes at the end of the container. elements will be at their true height. please see below:
 
 ![](999-img/2021-08-29-16-46-26.png)
 
@@ -708,13 +708,13 @@ Aligns all the boxes at the end of the container. Elements will be at their true
 }
 ```
 
-Stretches the boxes to match the height of the tallest element in the container. The width will be exactly so that it fits its content of each box.
+stretches the boxes to match the height of the tallest element in the container. the width will be exactly so that it fits its content of each box.
 
 ![](999-img/2021-08-29-16-50-10.png)
 
 ##### `justify-content: center`
 
-Centers the elements in the container in the middle
+centers the elements in the container in the middle
 
 ```css
 .container {
@@ -723,13 +723,13 @@ Centers the elements in the container in the middle
 }
 ```
 
-Please see image below:
+please see image below:
 
 ![](999-img/2021-08-29-16-53-26.png)
 
 ##### `justify-content: space-between`
 
-Sets equal space among the elements to match the horizontal size of container.
+sets equal space among the elements to match the horizontal size of container.
 
 ```css
 .container {
@@ -738,20 +738,20 @@ Sets equal space among the elements to match the horizontal size of container.
 }
 ```
 
-Please see image below:
+please see image below:
 
 ![](999-img/2021-08-29-16-55-52.png)
 
-### Spacing and aligning flex items
+### spacing and aligning flex items
 
-`align-items:` Vertical alignment
+`align-items:` vertical alignment
 `justify-content:` horizontal alignment
 
-Using following CSS code for the container:
+using following css code for the container:
 
 ```css
 .container {
-  /* STARTER */
+  /* starter */
   font-family: sans-serif;
   background-color: #ddd;
   font-size: 34px;
@@ -762,15 +762,15 @@ Using following CSS code for the container:
 }
 ```
 
-This means that all elements are aligned like following:
+this means that all elements are aligned like following:
 
 ![](999-img/2021-08-29-17-20-46.png)
 
-#### Overriding `align-items:` for elements with `align-self:`
+#### overriding `align-items:` for elements with `align-self:`
 
-You can override this for several or one element with the `align-self:` attribute.
+you can override this for several or one element with the `align-self:` attribute.
 
-Example 1:
+example 1:
 
 ```css
 .el--1 {
@@ -782,7 +782,7 @@ will give you:
 
 ![](999-img/2021-08-29-17-26-39.png)
 
-Example 2:
+example 2:
 
 ```css
 .el--5 {
@@ -794,9 +794,9 @@ will give you the following output:
 
 ![](999-img/2021-08-29-17-31-27.png)
 
-#### Rearranging individual elements with `order:`
+#### rearranging individual elements with `order:`
 
-Example 1:
+example 1:
 
 ```css
 .el--6 {
@@ -804,11 +804,11 @@ Example 1:
 }
 ```
 
-Which will give you:
+which will give you:
 
 ![](999-img/2021-08-29-17-50-13.png)
 
-Example 2:
+example 2:
 
 ```css
 .el--5 {
@@ -820,9 +820,9 @@ will give you:
 
 ![](999-img/2021-08-29-17-57-15.png)
 
-#### Adding space between items with `gap:`
+#### adding space between items with `gap:`
 
-Example:
+example:
 
 ```css
 .container {
@@ -841,9 +841,9 @@ givea gap between the elements of 30px:
 
 ![](999-img/2021-08-29-18-08-59.png)
 
-### The `flex` property
+### the `flex` property
 
-The default property of flex is:
+the default property of flex is:
 
 ```css
 .el {
@@ -855,9 +855,9 @@ The default property of flex is:
 
 #### `with` of elements with flex
 
-With `flex`, you should not use the `width:` property, you should instead use `flex-basis:`.
+with `flex`, you should not use the `width:` property, you should instead use `flex-basis:`.
 
-Example:
+example:
 
 ```css
 .el {
@@ -865,21 +865,21 @@ Example:
 }
 ```
 
-This will give following output:
+this will give following output:
 
 ![](999-img/2021-08-29-18-56-03.png)
 
 #### `flex-shrink:` property
 
-Please note that with `flex-basis:`, normally, the width of the elements will extend to 100px. But if them content in the element has larger size than specified, e.g. 100px as in the prior example, the `flex-basis:` proprty will extend 100px until it fits its contents. This is actually a feature of the `flex-grow:` property.
+please note that with `flex-basis:`, normally, the width of the elements will extend to 100px. but if them content in the element has larger size than specified, e.g. 100px as in the prior example, the `flex-basis:` proprty will extend 100px until it fits its contents. this is actually a feature of the `flex-grow:` property.
 
-Another note is that if you give the elements a really big size, lets say for example 200px. The elements will extend to so its fits its container, not more. So the ultime width of its element will be smaller if 200px is to large. The browsert will calibrate the width so the elements exactly fits its container. This feature is coming from the default value of `flex-shrink:1`.
+another note is that if you give the elements a really big size, lets say for example 200px. the elements will extend to so its fits its container, not more. so the ultime width of its element will be smaller if 200px is to large. the browsert will calibrate the width so the elements exactly fits its container. this feature is coming from the default value of `flex-shrink:1`.
 
-So, as an example:
+so, as an example:
 
 ```css
 .el {
-  /* DEFAULT flex portperties */
+  /* default flex portperties */
   /* flex-grow: 0;
   flex-shrink: 1;
   flex-basis: auto; */
@@ -892,11 +892,11 @@ will give the following output:
 
 ![](999-img/2021-08-29-19-04-55.png)
 
-If we now edit the default property of `flex-shrink:1` to `flex-shrink: 0`. This gives:
+if we now edit the default property of `flex-shrink:1` to `flex-shrink: 0`. this gives:
 
 ```css
 .el {
-  /* DEFAULT flex portperties */
+  /* default flex portperties */
   /* flex-grow: 0;*/
   flex-shrink: 0;
   /* flex-basis: auto; */
@@ -905,15 +905,15 @@ If we now edit the default property of `flex-shrink:1` to `flex-shrink: 0`. This
 }
 ```
 
-This gives the output:
+this gives the output:
 
 ![](999-img/2021-08-29-19-11-12.png)
 
-This basically forces every element to 200px even if it extends beyond the container.
+this basically forces every element to 200px even if it extends beyond the container.
 
 #### `flex-grow:` property
 
-The following code:
+the following code:
 
 ```css
 .el {
@@ -938,9 +938,9 @@ gives the output:
 
 ![](999-img/2021-08-29-19-40-30.png)
 
-The `flex-grow:1` property divides the maxiumum space in the container evenly among the elements inside the container.
+the `flex-grow:1` property divides the maxiumum space in the container evenly among the elements inside the container.
 
-If you set the `flex-grow:1` property for an individual element, the other elemenhts will fill up its content and the element that has the property `flex-grow:1` will fill up the rest of the empty space isnide the container.
+if you set the `flex-grow:1` property for an individual element, the other elemenhts will fill up its content and the element that has the property `flex-grow:1` will fill up the rest of the empty space isnide the container.
 
 ```css
 .el--1 {
@@ -952,11 +952,11 @@ gives: ;
 
 ![](999-img/2021-08-29-19-47-49.png)
 
-The value of `flex-grow:` is also relative to the rest of the elements. For example, if we in the container have `.el {flex-grow:1}` and in a single element have `.el--1 { flex-grow:2}`. This means that the element 1 will have 2 times the size of the available space as compared to the rest of the elements.
+the value of `flex-grow:` is also relative to the rest of the elements. for example, if we in the container have `.el {flex-grow:1}` and in a single element have `.el--1 { flex-grow:2}`. this means that the element 1 will have 2 times the size of the available space as compared to the rest of the elements.
 
-#### The `flex:` property
+#### the `flex:` property
 
-`flex:` property is a short for `flex-grow:`, `flex-shrink:` and `flex-basis:`. So for example, `flex: 0 0 200px;` actually means:
+`flex:` property is a short for `flex-grow:`, `flex-shrink:` and `flex-basis:`. so for example, `flex: 0 0 200px;` actually means:
 
 ```css
 .el {
@@ -966,5 +966,126 @@ The value of `flex-grow:` is also relative to the rest of the elements. For exam
 }
 ```
 
-You should always use `flex:` and not the other three ones.
-# Responsive-websites
+you should always use `flex:` and not the other three ones.
+
+## flex grid:
+
+```css
+.container{
+  display: grid;
+  grid_template-columns: 250px 150px /* two columns, one 250px wide and one 150px wide */
+  grid-template-rows: 300px 200px; /* two rows, first row 300px and second 200px */
+  gap: 30px; /* creates between the items in the grid */
+  /* you can also use following */
+  column-gap: 30px; /* creates a gap between the column */
+  row-gap:60px; /* creates a gap between the rows */
+}
+```
+
+when you need a one dimensional layout: use flexbox
+when you need a two dimensional layout: use flex grid
+
+create a grid container by setting `display: grid` to an container. the the items / containers in this container becomes the grid items.
+
+grid-lines surrounds the grid cells.
+
+gutters is a css word for gaps.
+
+grid track is basically a row or column.
+
+```css
+display:grid;
+grid-tempplate-columns: 200px 200px 1fr 100px; /* 1fr fills the rest of the empty space */
+```
+
+```css
+display:grid;
+grid-tempplate-columns: 200px 200px 1fr 1fr; /* both 3 and 4 column fill out the empty space */
+```
+
+```css
+display:grid;
+grid-tempplate-columns: 1fr 1fr 1fr 1fr; /* all columns fill out thte empty spacew */
+```
+
+```css
+display:grid;
+grid-tempplate-columns: 1fr 2fr 3fr 4fr; /* relative sizong */
+```
+
+```css
+display:grid;
+grid-tempplate-columns: 1fr 1fr 1fr auto; /* 4th column fills out the empty space.
+```
+
+```css
+display:grid;
+grid-tempplate-columns: repeat(4, 1fr); /* short for 1fr 1fr 1fr 1fr */
+```
+
+all the same as above implies for rows.
+
+### palacing and and spanning grid items
+
+```css
+.el--8 {
+  grid-column: 2 / 3; /* grid item should start at the beginning of column nr 2 and end at column 3 */ 
+  grid-row: 1 / 2;
+}
+
+.el--2 {
+  grid-column: 1; /* also possible */
+  grid-row: 2; /* also possible */
+}
+
+.el--4 {
+  grid-column: 1 / 3; /* spans over three columns */
+  grid-row: 2; /* also possible */
+}
+
+.el--4 {
+  grid-column: 1 / span 4; /* another syntax - same as above */
+  grid-row: 2;
+}
+
+.el--4 {
+  grid-column: 1 / -1; /* from the first column to the last column */
+  grid-row: 2;
+}
+```
+
+spanning works exactly the same with rows i.e. `grid-row`.
+
+### aligning grid items
+
+```css
+/* CSS GRID */
+display: grid;
+grid-template-column: 125px 200px 125px;
+grid-template-rows: 250px 100px;
+gap: 50;
+
+/* Aligning tracks inside container:
+distribte empty spaces:*/
+
+justify-content: center;
+
+/* justify-content: flex-between; */
+
+align-content: center;
+/* align-content:  flex-between; */
+/* align-content: end; //Like flex-end in flex-box */
+/* align-content: start; //Like flex-start in flex-box */
+
+/* Align items inside cells: moving items around inside cells */
+aling-items: center;
+justify-items: center;
+
+/* Overriding settings in the main container */
+.el--3 {
+  align-selg: end;
+  justify-self: end;
+}
+```
+
+### Building a simple CSS grid layout
