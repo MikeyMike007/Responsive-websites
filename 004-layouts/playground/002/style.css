@@ -1,0 +1,55 @@
+body {
+  margin: 10px;
+  padding: 0;
+}
+
+.container {
+  background-color: lightcyan;
+  font-size: 30px;
+  margin: 40px;
+  display: grid;
+  grid-template-columns: 200px 200px 100px 100px; /* Will create as many rows as necessary to accommodate content */
+  grid-template-rows: 300px 200px;
+  /* gap: 30px; */
+  column-gap: 30px;
+  row-gap: 60px;
+}
+
+.box {
+  color: black;
+  text-transform: uppercase;
+  font-family: sans-serif;
+}
+
+.box-1 {
+  background-color: blueviolet;
+}
+
+.box-2 {
+  background-color: orangered;
+}
+
+.box-3 {
+  background-color: green;
+  height: 150px;
+}
+
+.box-4 {
+  background-color: goldenrod;
+}
+
+.box-5 {
+  background-color: palevioletred;
+}
+
+.box-6 {
+  background-color: steelblue;
+}
+
+.box-7 {
+  background-color: yellow;
+}
+
+.box-8 {
+  background-color: crimson;
+}

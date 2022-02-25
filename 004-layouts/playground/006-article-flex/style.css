@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-style: sans-serif;
+  border-top: 2px solid cyan;
+}
+
+.container {
+  width: 1200px;
+  margin: 10 auto;
+}
+
+.article-header {
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.header-title {
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 36px;
+  color: #1098ad;
+  font-weight: bold;
+}
+
+.header-navigation {
+  display: flex;
+  gap: 30px;
+  font-size: 20px;
+}
+
+.article-body {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+  align-content: flex-start;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+article {
+  width: 800px;
+}
+
+h1 {
+  color: #1098ad;
+  font-size: 36px;
+}
+
+.body-title {
+  position: relative;
+}
+
+.related-title {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.related-post-container {
+  background-color: lightgrey;
+}
+
+.related-post {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  align-content: center;
+  align-items: flex-start;
+  font-weight: bold;
+}
+
+.related-img {
+  width: 75px;
+  height: 75px;
+}
+
+.body-title::after {
+  padding: 10px;
+  content: 'Top';
+  position: absolute;
+  background-color: yellow;
+  color: black;
+  text-transform: uppercase;
+  font-size: 16px;
+  right: 20px;
+  top: -20px;
+}
+
+.author-info {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.author-image {
+}
+
+.author-posting-info {
+  font-style: italic;
+}
+
+.article-image {
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+ol,
+ul {
+  margin-left: 40px;
+  font-size: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.first-list-item {
+  font-weight: bold;
+}
+
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:active {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+footer {
+  position: relative;
+}
+
+.copyright {
+  color: lightgray;
+}
+
+button {
+  position: absolute;
+  right: -200px;
+  bottom: 20px;
+  height: 50px;
+  width: 100px;
+  font-weight: bold;
+  font-size: 20px;
+}

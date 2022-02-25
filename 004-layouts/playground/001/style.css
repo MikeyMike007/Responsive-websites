@@ -1,0 +1,141 @@
+body {
+  margin: 10px;
+  padding: 0;
+}
+
+.container {
+  margin: 40px;
+  background-color: lightcyan;
+
+  /*
+   * Activates flexbox
+  */
+  display: flex;
+
+  /*
+  * Sets the position of the boxes in the container vertically.
+  *
+  * center: aligns boxes at the center of the container,
+  * flex-start: aligns boxes at the start (top) of the container.
+  * flex-end: aligns boxes at the end (bottom) of the container.
+  * stretch: stretches the boxes to match the height of the tallest element in the container.
+  *
+  * The width will be exactly so that it fits its content of each box.
+  * All items will have its true height.
+  */
+  align-items: center;
+
+  /*
+  * Sets the position of the boxes in the container horizontally.
+  *
+  * center: Centers the elements in the container in the middle.
+  * space-between: Sets equal space among the elements to match the horizontal size of container.
+  * flex-start: Puts the first box at the the beginning (left) of the container.
+  * flex-end: Puts the last box at the end (right) of the container.
+  * 
+  */
+  justify-content: center;
+
+  /*
+  * Add gap between the boxes with:
+  */
+  gap: 30px;
+}
+
+.box {
+  color: black;
+  background-color: black;
+  margin: 2px;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+
+  /*
+  * Default values of flex properties
+  * ----------------------------------------------------------------------------
+  * flex-grow: 0;
+  * flex-shrink: 1;
+  * flex-basis: auto;
+  *
+  * flex-grow
+  * ----------------------------------------------------------------------------
+  * Given default values for flex-shrink and flex-basis, the flex-grow:1 property
+  * divides the maxiumum space in the container evenly
+  * among the elements inside the container.
+
+  * If you set the flex-grow:1 property for an individual element, the other
+  * elements will fill up its content and the element that has the property
+  * flex-grow:1 will fill up the rest of the empty space inside the container.
+
+  *
+  * flex-shrink
+  * ----------------------------------------------------------------------------
+  * If you give the elements a really big size, lets say for
+  * example 200px, the elements will extend to so its fits its container, not more.
+  * so the ultime width of its element will be smaller if 200px is to large. the
+  * browser will calibrate the width so the elements exactly fits its container.
+  * this feature is coming from the default value of flex-shrink:1.
+  * By setting flex-shrink: 0, the individual boxes will extend beyond its container.
+  * This basically forces every element to 200px even if it extends beyond the container.
+  *
+  * flex-basis
+  * ----------------------------------------------------------------------------
+  * When adjusting the width of the individual boxes in the flexbox, the property
+  * flex-basis should be used insted of the property width.
+  *
+  * With the flex-basis property of, as an example, say 100px. The width of the
+  * elements will extend to 100px. But if the content in each element has larger
+  * size than specified, e.g. 100px, the flex-basis property will extend the box
+  * beyond 100px. until it fits its contents.
+  *
+  */
+}
+
+.box-1 {
+  background-color: blueviolet;
+  flex-grow: 1;
+}
+
+.box-2 {
+  background-color: orangered;
+}
+
+.box-3 {
+  background-color: green;
+  height: 250px;
+}
+
+.box-4 {
+  background-color: goldenrod;
+
+  /*
+  * Override align-items with align-self:
+  */
+  align-self: flex-start;
+}
+
+.box-5 {
+  background-color: palevioletred;
+
+  /*
+  * Change the order with:
+  */
+  order: -1;
+}
+
+.box-6 {
+  background-color: steelblue;
+
+  /*
+  * Override align-items with align-self:
+  */
+  align-self: stretch;
+}
+
+.box-7 {
+  background-color: yellow;
+}
+
+.box-8 {
+  background-color: crimson;
+}

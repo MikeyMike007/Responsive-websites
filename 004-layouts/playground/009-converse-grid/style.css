@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-style: sans-serif;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.price-shipping-container {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.price-text {
+  font-size: 20px;
+  font-weight: bold;
+  flex: 1;
+}
+
+.shipping-text {
+  flex: 1;
+  text-transform: uppercase;
+  color: gray;
+  font-weight: bold;
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+ul {
+  margin-left: 10px;
+  list-style: square;
+}
+
+li {
+  margin: 10px;
+}
+
+.container {
+  border: 2px solid black;
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 5fr 1fr;
+  column-gap: 10px;
+}
+
+.product-title {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.product {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.product-details {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+
+button {
+  grid-column: 1/ -1;
+  grid-row: 3 / 4;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  background-color: black;
+}
+
+.shoe-image {
+  grid-column: 1 / 2;
+  grid-row: 2/3;
+  width: 100%;
+}

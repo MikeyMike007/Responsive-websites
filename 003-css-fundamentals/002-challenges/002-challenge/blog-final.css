@@ -28,19 +28,20 @@ body {
   background-color: #ec2f2f;
   color: #fff;
   font-size: 12px;
+  display: inline-block;
   letter-spacing: 3px;
   text-transform: uppercase;
   font-weight: bold;
   padding: 7px 15px;
   display: inline-block;
-  position:absolute;
+  position: absolute;
   top: -17px;
   left: -38px;
 }
 
 .color {
   background-color: #000;
-  height:22px;
+  height: 22px;
   width: 22px;
   display: inline-block;
   margin-right: 10px;
@@ -79,13 +80,15 @@ body {
   margin-bottom: 20px;
 }
 
-.more-info:link, .more-info:visited {
+.more-info:link,
+.more-info:visited {
   color: black;
   margin-bottom: 30px;
   display: inline-block;
 }
 
-.more-info:hover, .more-info:active {
+.more-info:hover,
+.more-info:active {
   text-decoration: none;
 }
 
@@ -123,5 +126,3 @@ body {
   color: #000;
   background-color: #fff;
 }
-
-

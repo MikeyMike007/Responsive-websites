@@ -1,0 +1,87 @@
+body {
+  margin: 10px;
+  padding: 0;
+}
+
+.container {
+  background-color: lightcyan;
+  font-size: 30px;
+  margin: 40px;
+  display: grid;
+
+  /*
+  * grid-template-columns will create as many rows as necessary to accommodate
+  * content if grid-template-rows is not specified
+  *
+  * fr stands for fraction, it will make the column dynamic i.e. all the
+  * available space that is left in the container will be allocated to the column
+  * that has the size of 1fr
+  *
+  * If you have several columns with the value 1fr, the available space in the
+  * container will be allocated equally to these two columns.
+  *
+  * If a column takes the value auto, it will be allocated exactly the space it needs
+  * to accomate the boxes in that column.
+  *
+  * grid-template-columns: 1fr 1ft 1fr 1fr = repeat(4, 1fr)
+  */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  /*
+  * grid-template-rows: 1fr 1fr means that the row that has the highest
+  * box, i.e. the one that has the height 150px will apply the height 150px
+  * to all enclosed boxes. Then it will apply the same height to all the boxes
+  *  on the second row aswell.
+  */
+  grid-template-rows: 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 40px;
+}
+
+.box {
+  color: black;
+  text-transform: uppercase;
+  font-family: sans-serif;
+}
+
+.box-1 {
+  background-color: blueviolet;
+}
+
+.box-2 {
+  background-color: orangered;
+  grid-column: 1/2;
+  /*
+  * With *span*, you can span the box over several rows / columns
+  * If you write grid-column: 1 / -1 it basically indicates that the box
+  * should span from column 1 to the last column
+  */
+  grid-row: 1 / span 3;
+}
+
+.box-3 {
+  background-color: green;
+  height: 150px;
+}
+
+.box-4 {
+  background-color: goldenrod;
+}
+
+.box-5 {
+  background-color: palevioletred;
+}
+
+.box-6 {
+  background-color: steelblue;
+}
+
+.box-7 {
+  background-color: yellow;
+}
+
+.box-8 {
+  background-color: crimson;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}

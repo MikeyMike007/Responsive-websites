@@ -1,10 +1,10 @@
-# html and css notes
+# HTML and CSS Notes
 
-## html tags
+## HTML tags
 
 | tag                              | description                      |
 | -------------------------------- | -------------------------------- |
-| `<doctype html>`                 |                                  |
+| `<doctype html>`                 |  Information                                 |
 | `<html>`                         |                                  |
 | `<head>`                         |                                  |
 | `<body>`                         |                                  |
@@ -30,7 +30,6 @@
 | `<footer>`                       |                                  |
 | `<aside>`                        |                                  |
 | `<button>`                       |                                  |
-| `<h1 style="color: blue">`       |                                  |
 | `<style>`                        | css                              |
 | `footer`                         |                                  |
 
@@ -101,139 +100,24 @@
 | `clear: both`                | Clears float on both sides                     |
 | `box-sizing:`                | e.g. `border-box` or `content-box`             |
 
-### Position
+## What is CSS?
 
-#### Relative
+CSS stands for Cascading Style Sheets
 
-The element is positioned according to the normal flow of the document, and then
-offset relative to itself based on the values of top, right, bottom, and left.
-The offset does not affect the position of any other elements; thus, the space
-given for the element in the page layout is the same as if position were static.
+## How can CSS be sources into a HTML document?
 
-#### Absolute
+You can insert CSS code inside a HTML document in three different ways i.e.
+`Inline CSS`, `Internal CSS` and `External CSS`.
 
-The element is removed from the normal document flow, and no space is created
-for the element in the page layout. It is positioned relative to its closest
-positioned ancestor, if any; otherwise, it is placed relative to the initial
-containing block. Its final position is determined by the values of top,
-right, bottom, and left.
+### Inline CSS
 
-#### Static
+`Inline CSS` means writing CSS code inside an HTML element brackets
+e.g. `<h1 style="color: blue">This text is blue</h1>`. This is not recommended.
 
-The element is positioned according to the normal flow of the document. the top,
-right, bottom, left, and z-index properties have no effect. This is the default
-value.
+### Internal CSS
 
-### Display
-
-The display CSS property sets whether an element is treated as a block or inline
-element and the layout used for its children, such as flow layout, grid or flex.
-
-Formally, the display property sets an element's inner and outer display types.
-The outer type sets an element's participation in flow layout; the inner type
-sets the layout of children. Some values of display are fully defined in their
-own individual specifications; for example the detail of what happens when
-display: flex is declared is defined in the CSS flexible box model specification
-
-#### Block
-
-The element generates a block element box, generating line breaks both before
-and after the element when in the normal flow.
-
-#### Inline
-
-The element generates one or more inline element boxes that do not generate line
-breaks before or after themselves. in normal flow, the next element will be on
-the same line if there is space.
-
-#### Inline-block
-
-The element generates a block element box that will be flowed with surrounding
-content as if it were a single inline box (behaving much like a replaced element
-would).
-
-### + operator
-
-The `+` sign selector is used to select the elements that are placed immediately
-after the specified element but not inside the particular elements.
-
-### `::after` and `::before`
-
-Example:
-
-![::after](999-img/2021-08-26-21-20-16.png)
-
-Example:
-
-![::afterv1](999-img/2021-08-26-21-22-13.png)
-
-### Float
-
-E.g. `float: none`, `float: left;` or `float:right`.
-
-The float css property places an element on the left or right side of its
-container, allowing text and inline elements to wrap around it. the element is
-removed from the normal flow of the page, though still remaining a part of the
-flow (in contrast to absolute positioning).
-
-Example of `float:right`:
-
-![float:right](999-img/2021-08-28-14-02-46.png)
-
-### `border-box`
-
-The box-sizing CSS property sets how the total width and height of an element is
-calculated.
-
-By default in the CSS box model, the width and height you assign to an element
-is applied only to the element's content box. If the element has any border or
-padding, this is then added to the width and height to arrive at the size of the
-box that's rendered on the screen. This means that when you set width and
-height, you have to adjust the value you give to allow for any border or padding
-that may be added. For example, if you have four boxes with width: 25%;, if any
-has left or right padding or a left or right border, they will not by default
-fit on one line within the constraints of the parent container.
-
-The box-sizing property can be used to adjust this behavior:
-
-- content-box gives you the default CSS box-sizing behavior. If you set an
-  element's width to 100 pixels, then the element's content box will be 100
-  pixels wide, and the width of any border or padding will be added to the final
-  rendered width, making the element wider than 100px.
-
-- border-box tells the browser to account for any border and padding in the
-  values you specify for an element's width and height. if you set an element's
-  width to 100 pixels, that 100 pixels will include any border or padding you
-  added, and the content box will shrink to absorb that extra width. this
-  typically makes it much easier to size elements. box-sizing: border-box is the
-  default styling that browsers use for the `<table>`, `<select>`, and
-  `<button>` elements, and for `<input>` elements whose type is radio, checkbox,
-  reset, button, submit, color, or search.
-
-Please note: it is often useful to set box-sizing to border-box to layout
-elements. this makes dealing with the sizes of elements much easier, and
-generally eliminates a number of pitfalls you can stumble on while laying out
-your content. on the other hand, when using position: relative or position:
-absolute, use of box-sizing: content-box allows the positioning values to be
-relative to the content, and independent of changes to border and padding sizes,
-which is sometimes desirable.
-
-## Semantic html
-
-Semantic html: in addition to function, tags also have a meaning.
-
-## CSS
-
-Cascading style sheets
-
-### inline css
-
-Writing CSS code inside element e.g. `<h1 style="color: blue">this text is blue</h1>`. not recommended!
-
-### Internal css
-
-Writing CSS code inside `<style>` brackets. The `<style>` tags shall be in the
-`<header>` section i.e.
+`Internal CSS` means writing CSS code inside `<style>` brackets in the HTML
+document itself. The `<style>` tags needs to be in the `<header>` section i.e.
 
 ```html
 <html>
@@ -245,13 +129,19 @@ Writing CSS code inside `<style>` brackets. The `<style>` tags shall be in the
       }
     </style>
   </head>
-  <body></body>
+  <body>
+    <h1>This text is blue</h1>
+  </body>
 </html>
 ```
 
-### External css
+### External CSS
 
-Create a new file `style.css` like:
+`External CSS` means creating a external CSS file, typically named `style.css`.
+This file is then sourced into the HTML code through placing following code
+inside the header brackets `<link href="style.css" rel="stylesheet" />` in the HTML file.
+
+Example of `style.css`:
 
 ```css
 h1 {
@@ -259,50 +149,10 @@ h1 {
 }
 ```
 
-And link the file `style.css` in the html file within the `<head>` segment with
-the following code tag: `<link href="style.css" rel="stylesheet">`.
+Sourcing this file into a HTML document will make all the text between `<h1>`
+brackets blue.
 
-### Inheritance
-
-If you style `<p>`, all the tags within the `<p>` tag will follow. i.e. if you
-have `<p>hey <strong>you</strong></p>` and you style `<p>`, then `<strong>`
-will inherit the style.
-
-### Combining selectors
-
-You can use the same properties for many selectors at the same time e.g.,
-
-```css
-h1,
-h2,
-h3,
-h4,
-li,
-p {
-  font-family: sans-serif;
-}
-```
-
-Modify `<p>` tags only in the `<footer>` - use then:
-
-```css
-footer p {
-  font-size: 10px;
-}
-```
-
-Same for `<p>` tags in headers - use then
-
-```css
-header p {
-  font-style: italic;
-}
-```
-
-following code formats `<p>` tags which is inside a `<header>` tag which itself
-is in a `<article>` tag.
-
-### Classes and id-selectors
+## Classes and id-selectors
 
 Comment in css: `/* comment */`
 
@@ -398,123 +248,6 @@ is the first child of `<article>`. so what would work in this case is only
 in the following html code we see that `<p>` is the last child of `<article>`,
 here we could use: `article p:last-child { color: red;}` to style that.
 
-### Styling hyperlinks
-
-```css
-/* styling hyperlinks */
-a:link {
-  color: #1098ad;
-  text-decoration: none; /* no underline on links */
-}
-
-a:visited {
-  color: #1098ad; /* same color on links*/
-}
-
-a:hover {
-  color: orange;
-  font-weight: bold;
-  text-decoration: underline dotted orangered;
-}
-
-a:active {
-  background-color: black;
-  font-style: italic;
-}
-```
-
-### Chrome dev tools
-
-You can do some testing under following link without changing any code:
-
-`right click->inspect->elements`
-
-### Conflicts between selectors
-
-1. Should not be used: declaration marked `!important`.
-2. Should not be used: inline style (style attribute in html)
-3. Highest priority: id selector (last selector gets applied)
-4. Class (.) or pseudo class (:) selector
-5. Element selector (p, div, li, etc)
-6. Universal selector
-
-### Inheritance and the universal selector
-
-Inheritance comes from parent tags. E.g. style `a (link)` and `p` tags within
-`a` `<nav>` tag:
-
-`nav a:link, nav p { font-size: 18px; }`
-
-Or you could just do: `nav { font-size: 18px;}` which basically is the same if
-there is only a `<a>` and `<p>` tag inside the `<nav>`.
-
-Universal selector: `* {}`, you could also use `body {}`.
-
-### Box model
-
-Following codes are equal:
-
-```css
-.main-header {
-  padding: 20px;
-  padding-left: 40px;
-  padding-right: 40px;
-}
-```
-
-```css
-.main-header {
-  padding: 20px 40px;
-}
-```
-
-### Collapsing margins
-
-Something about the how CSS adds up margins between two boxes.
-
-### Images
-
-Set the width or height to what is specified in the html tag, use:
-
-`.post-img { width: 100%; height: auto;}`
-
-The `width: 100%` is making the width of the pciture dynamic.
-
-### Centering our page
-
-Add container of what you want to center line `<div class="container">`. Add
-following in the css
-`.container {width: 700px}; margin-left: auto; margin-right: auto;}`
-this centers the page and is dynamic.
-
-### Different types of boxes
-
-- inline boxes: dont create any vertical space outside the element i.e. the
-  margin: i.e. `nav a: link {margin: 20px; }` wont work since it does not create
-  any vertical space. the padding will indeed work since it is inside the box
-  i.e. `nav a:link {padding: 20px;}`. to change it to an block level element
-  with `nav a:link {margin:20px; padding:20px; display: block;}`. this will get
-  the `margin` to work..
-
-- block level elements:
-
-- inline block element: combination of inline element and box elements
-  e.g. `nav a: link {margin-top:30px; display:inline-block;}`
-
-- images are inline-block elements.
-
-### Absolute positioning
-
-If you want to add a **like button** in the button of the page (right). you can
-first add a `<button>` tag in the html code then in the css code you can
-specify: `button { position: absolute; bottom: 50px; right: 50px;}` and then in
-the body you can add `body {position:relative;}`. you can also put the
-`relative` position in a container.
-
-Should only be used for single elements.
-
-### Pseudo elements
-
 Style first letter in `<h1>` directly from css:
 
 ```css
@@ -559,7 +292,104 @@ top:-15px;
 right: -25px;
 ```
 
-### Centering
+## Inheritance
+
+If you style `<p>`, all the tags within the `<p>` tag will follow. i.e. if you
+have `<p>hey <strong>you</strong></p>` and you style `<p>`, then `<strong>`
+will inherit the style.
+
+Inheritance comes from parent tags. E.g. style `a (link)` and `p` tags within
+`a` `<nav>` tag:
+
+`nav a:link, nav p { font-size: 18px; }`
+
+Or you could just do: `nav { font-size: 18px;}` which basically is the same if
+there is only a `<a>` and `<p>` tag inside the `<nav>`.
+
+Universal selector: `* {}`, you could also use `body {}`.
+
+## Combining selectors
+
+You can use the same properties for many selectors at the same time e.g.,
+
+```css
+h1,
+h2,
+h3,
+h4,
+li,
+p {
+  font-family: sans-serif;
+}
+```
+
+Modify `<p>` tags only in the `<footer>` - use then:
+
+```css
+footer p {
+  font-size: 10px;
+}
+```
+
+Same for `<p>` tags in headers - use then
+
+```css
+header p {
+  font-style: italic;
+}
+```
+
+following code formats `<p>` tags which is inside a `<header>` tag which itself
+is in a `<article>` tag.
+
+## Conflicts between selectors
+
+1. Should not be used: declaration marked `!important`.
+2. Should not be used: inline style (style attribute in html)
+3. Highest priority: id selector (last selector gets applied)
+4. Class (.) or pseudo class (:) selector
+5. Element selector (p, div, li, etc)
+6. Universal selector
+
+## Styling hyperlinks
+
+```css
+/* styling hyperlinks */
+a:link {
+  color: #1098ad;
+  text-decoration: none; /* no underline on links */
+}
+
+a:visited {
+  color: #1098ad; /* same color on links*/
+}
+
+a:hover {
+  color: orange;
+  font-weight: bold;
+  text-decoration: underline dotted orangered;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+```
+
+## Images
+
+Set the width or height to what is specified in the html tag, use:
+
+`.post-img { width: 100%; height: auto;}`
+
+The `width: 100%` is making the width of the pciture dynamic.
+
+## Centering
+
+Add container of what you want to center line `<div class="container">`. Add
+following in the css
+`.container {width: 700px}; margin-left: auto; margin-right: auto;}`
+this centers the page and is dynamic.
 
 One usual mistake that people do is that they try to center e.g. text inside
 inline elements. For example, you have:
@@ -596,6 +426,114 @@ nav {
 }
 ```
 
+## Position
+
+### Relative
+
+The element is positioned according to the normal flow of the document, and then
+offset relative to itself based on the values of top, right, bottom, and left.
+The offset does not affect the position of any other elements; thus, the space
+given for the element in the page layout is the same as if position were static.
+
+### Absolute
+
+The element is removed from the normal document flow, and no space is created
+for the element in the page layout. It is positioned relative to its closest
+positioned ancestor, if any; otherwise, it is placed relative to the initial
+containing block. Its final position is determined by the values of top,
+right, bottom, and left.
+
+### Static
+
+The element is positioned according to the normal flow of the document. the top,
+right, bottom, left, and z-index properties have no effect. This is the default
+value.
+
+### More
+
+If you want to add a **like button** in the button of the page (right). you can
+first add a `<button>` tag in the html code then in the css code you can
+specify: `button { position: absolute; bottom: 50px; right: 50px;}` and then in
+the body you can add `body {position:relative;}`. you can also put the
+`relative` position in a container.
+
+Should only be used for single elements.
+
+## Display
+
+The display CSS property sets whether an element is treated as a block or inline
+element and the layout used for its children, such as flow layout, grid or flex.
+
+Formally, the display property sets an element's inner and outer display types.
+The outer type sets an element's participation in flow layout; the inner type
+sets the layout of children. Some values of display are fully defined in their
+own individual specifications; for example the detail of what happens when
+display: flex is declared is defined in the CSS flexible box model specification
+
+### Block
+
+The element generates a block element box, generating line breaks both before
+and after the element when in the normal flow.
+
+### Inline
+
+The element generates one or more inline element boxes that do not generate line
+breaks before or after themselves. in normal flow, the next element will be on
+the same line if there is space.
+
+### Inline-block
+
+The element generates a block element box that will be flowed with surrounding
+content as if it were a single inline box (behaving much like a replaced element
+would).
+
+### More
+
+- inline boxes: dont create any vertical space outside the element i.e. the
+  margin: i.e. `nav a: link {margin: 20px; }` wont work since it does not create
+  any vertical space. the padding will indeed work since it is inside the box
+  i.e. `nav a:link {padding: 20px;}`. to change it to an block level element
+  with `nav a:link {margin:20px; padding:20px; display: block;}`. this will get
+  the `margin` to work..
+
+- block level elements:
+
+- inline block element: combination of inline element and box elements
+  e.g. `nav a: link {margin-top:30px; display:inline-block;}`
+
+- images are inline-block elements.
+
+## Float
+
+E.g. `float: none`, `float: left;` or `float:right`.
+
+The float css property places an element on the left or right side of its
+container, allowing text and inline elements to wrap around it. the element is
+removed from the normal flow of the page, though still remaining a part of the
+flow (in contrast to absolute positioning).
+
+Example of `float:right`:
+
+![float:right](999-img/2021-08-28-14-02-46.png)
+
+## Sizing notation
+
+Following codes are equal:
+
+```css
+.main-header {
+  padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+```
+
+```css
+.main-header {
+  padding: 20px 40px;
+}
+```
+
 ## Layouts
 
 Three types of layouts:
@@ -604,7 +542,7 @@ Three types of layouts:
 2. flexbox
 3. grid
 
-### Float
+## Float
 
 If a container, header, or whatsoever contains child elements which all are
 floated, then the height of the container will collapse. you can clear floats
@@ -621,10 +559,6 @@ to all elements on the page, just put it in the universal selector `* {}`. you
 cannot put it in the body section since `box-sizing:` doesnt get inherited.
 
 ## Flexbox
-
-### Introduction
-
-#### Base code
 
 Following code gives:
 
@@ -1169,4 +1103,60 @@ justify-items: center;
 }
 ```
 
-### Building a simple CSS grid layout
+![image_2022-02-24-10-33-09](img/image_2022-02-24-10-33-09.png)
+
+The keyword `display: none` basically removes the container.
+
+### Building a simple CSS grid layouts
+
+/_CSS GRID_/
+display: grid;
+grid-template-columns: 125px 200px 125px;
+grid-template-rows: 250px 100px;
+gap: 50px;
+
+/_Aligning tracks inside container horizontally_/
+justify-content: center;
+
+/_Aligning tracks inside container vertically_/
+align-content: center;
+
+/_Aligning items inside cells: moving items around inside cells_/
+
+/_horizontally_/
+justify-items: center;
+
+/_verically_/
+align-items: center;
+/_Overide_/
+/_horizontally_/
+justify-self: end;
+
+/_vertically_/
+align-self: end;
+
+grid-column: 1/2;
+/\*
+
+- With _span_, you can span the box over several rows / columns
+- If you write grid-column: 1 / -1 it basically indicates that the box
+- should span from column 1 to the last column
+  \*/
+  grid-row: 1 / span 3;
+
+grid-column: 1 / -1;
+
+## + operator
+
+The `+` sign selector is used to select the elements that are placed immediately
+after the specified element but not inside the particular elements.
+
+## `::after` and `::before`
+
+Example:
+
+![::after](999-img/2021-08-26-21-20-16.png)
+
+Example:
+
+![::afterv1](999-img/2021-08-26-21-22-13.png)
