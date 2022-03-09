@@ -4,7 +4,7 @@
 
 | tag                              | description                      |
 | -------------------------------- | -------------------------------- |
-| `<doctype html>`                 |  Information                                 |
+| `<doctype html>`                 | Information                      |
 | `<html>`                         |                                  |
 | `<head>`                         |                                  |
 | `<body>`                         |                                  |
@@ -1160,3 +1160,50 @@ Example:
 Example:
 
 ![::afterv1](999-img/2021-08-26-21-22-13.png)
+
+## Section 5: Web design rules and Framework
+
+## Project overview
+
+span
+blockquote
+em
+
+## Overview of web designs and website personalities
+
+Design Software:
+Fketch
+Sigma
+Photoshop Xd
+Photoshop Ps
+
+## Web Design Rules #1: Typography
+
+## Implementing typography
+
+Link font file before css file.
+
+Please note that you can adjust css variables in realtime in the inspect window.
+
+letter-spacing: -1px;
+line-height: 1.7;
+
+Use a font size system.
+
+## Web dsegin rules: #2: Colors
+
+Toolbox:
+<https://yeun.github.io/open-color/#gray>
+Taiwindcss
+Flat UI Colors
+
+Check colors with coolors contrast checkers.
+
+Use <figure> for cards
+
+Steal designs:
+Lands-book.com
+One page love
+awwards
+
+You can have flex inside <ul> <li>.
