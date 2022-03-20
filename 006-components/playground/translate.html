@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        width: 600px;
+        height: 400px;
+        margin: 100px auto;
+        background-color: pink;
+        position: relative;
+      }
+
+      .btn {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: blue;
+        cursor: pointer;
+        position: absolute;
+      }
+
+      .btn-mid-left {
+        top: 50%;
+        left: 0;
+
+        transform: translate(-50%, -50%);
+      }
+
+      .btn-mid-right {
+        top: 50%;
+        right: 0;
+
+        transform: translate(50%, -50%);
+      }
+
+      .btn-mid-top {
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .btn-mid-bottom {
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="btn btn-mid-left"></div>
+      <div class="btn btn-mid-right"></div>
+      <div class="btn btn-mid-top"></div>
+      <div class="btn btn-mid-bottom"></div>
+    </div>
+  </body>
+</html>

@@ -71,6 +71,10 @@
 
       section {
         background-color: #e9ecef;
+        padding: 40px;
+        /* THIS ALONE WILL SHINK ALL THE FLEX ITEMS */
+        /* DOESNT HAVE ANYTHING TO DO WITH FLEXBOX */
+        overflow: scroll;
         display: flex;
         gap: 40px;
         flex-direction: column;
@@ -79,7 +83,13 @@
       .email {
         background-color: #adb5bd;
         height: 96px;
+        /* ONLY NECASSARY SINCE WE ARE USING FLEXBOX, OTHERWISE, THE overflow: scroll WOULD BE ENOUGH */
+        flex-shrink: 0;
+
         /* FLEX BOX TREATS TEXT AS AN FLEX ITEM */
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
     </style>
   </head>

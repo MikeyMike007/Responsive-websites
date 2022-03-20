@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        /* SIZE */
+        width: 700px;
+        height: 200px;
+
+        /* LOCATION */
+        margin: 100px auto;
+        padding-left: 100px;
+
+        /* COLORING */
+        background-color: pink;
+
+        /* FLEX */
+        display: flex;
+        align-items: center;
+        gap: 100px;
+      }
+
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+      }
+
+      .box-first {
+        transform: scale(2.5);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box-first"></div>
+    </div>
+  </body>
+</html>
